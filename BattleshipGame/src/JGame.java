@@ -8,6 +8,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
+// Reference:
+// Part 1 = https://www.youtube.com/watch?v=DNK-2j4k2bg&list=WL&index=14
+// Part 2 = https://www.youtube.com/watch?v=VEPJI2eh9oY&list=WL&index=15
+// Part 3 = https://www.youtube.com/watch?v=581KPBVasZQ
+
 @SuppressWarnings("serial")
 public class JGame extends JFrame implements ActionListener {
 	
