@@ -2,18 +2,19 @@ import javax.swing.JOptionPane;
 
 public class Control {
 	
-	public int[] getUserCoordinates(int row, int col) {
+	public int[] userCoordinates(int[] userInput) {
 		int[] userCoordinates = new int[2];
-		userCoordinates[0] = row-1;
-		userCoordinates[1] = col-1;
+		for(int i = 0; i < userCoordinates.length; i++) {
+			userCoordinates[i] = userInput[i] - 1;
+		}
 		return userCoordinates;
 	}
 	
-	public String evaluateGuessAndGetTarget(int[] guessCoordinates, String[][] gameBoard, String ship, String water, String hit, String miss) {
+	public String checkAndEvaluateTarget(int[] userCoordinates, String[][] battleArea,String ship, String water, String hit, String miss) {
 		String message;
-		int row = guessCoordinates[0];
-		int col = guessCoordinates[1];
-		String target = gameBoard[row][col];
+		int row = userCoordinates[0];
+		int col = userCoordinates[1];
+		String target = battleArea[row][col];
 		if(target.equals(ship)) { 
             message = "Hit!";
             target = hit;
@@ -29,5 +30,10 @@ public class Control {
 		return target;
 	}
 	
-	
+	public String[][] updateBattleArea(String[][] battleArea, int[] userCoordinates, String locationTarget) {
+		int row = userCoordinates[0]; 
+        int col = userCoordinates[1]; 
+        battleArea[row][col] = locationTarget; 
+        return battleArea;
+	}
 }
