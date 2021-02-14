@@ -38,7 +38,7 @@ public class View {
 			battle += (row + 1) + " ";
             for(int col = 0; col < model.getDimension(); col++) {
                 String position = battleArea[row][col];
-                if(position.equals(model.getShip())) {
+                if(position.equals(model.getShip()) || position.equals(model.getBigShip()) || position.equals(model.getFriendlyShip())) {
                 		battle += model.getWater() + "  ";
                 } 
                 else {
