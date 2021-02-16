@@ -93,7 +93,7 @@ public class Model {
 	private String[][] placeShips(String[][] area, int dimension, String water, String ship,String bigShip,String friendlyShip, int numShips){
 		int shipsPlaced = 0;
 		PlaceFriendlyShip(dimension, area,friendlyShip);
-	    System.out.println("Our Friendly Ship has been placed");
+	    System.out.println("Our Own Ship has been placed");
 		while(shipsPlaced < numShips) {
 			int[] location = generateShipCoordinates(dimension);
 			String shipLocation = area[location[0]][location[1]];
