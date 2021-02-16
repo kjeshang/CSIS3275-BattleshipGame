@@ -23,15 +23,15 @@ public class Control {
 		else if(target.equals(water)) { 
             message = "Miss!";
             target = miss;
-            System.out.println("You hit on water");
+            System.out.println("You hit the water");
         } else if (target.equals(bigShip)) {
-        	message = "BigHit";
+        	message = "Big Hit!";
         	target = hit;
             System.out.println("You hit on BigShip");
 		}else if (target.equals(friendlyShip)) {
-			message = "You Hit Friendly Ship";
+			message = "You hit your own ship";
         	target = loss;
-            System.out.println("You hit on friendly Ship");
+            System.out.println("You hit your the FriendlyShip");
 		}
 		else {
             message = "Already hit!";
