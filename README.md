@@ -1,5 +1,5 @@
 # CSIS3275-BattleshipGame
-CSIS 3275 Programming Project : Battleship Game
+CSIS 3275 Programming Project: Battleship Game (Java Swing)
 
 Group:
 Heena Kashyap, 
